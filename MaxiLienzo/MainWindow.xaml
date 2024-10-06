@@ -11,12 +11,18 @@
         Background="White"
         ResizeMode="CanResizeWithGrip">
     <Grid>
-        <Grid Background="LightGray" Height="30" VerticalAlignment="Top" MouseDown="MoveWindow">
+        <Grid Background="LightGray" Height="15" VerticalAlignment="Top" MouseDown="MoveWindow">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <Ellipse Width="10" Height="10" Fill="Red" Margin="5" MouseDown="CloseWindow"/>
-                <Ellipse Width="10" Height="10" Fill="Yellow" Margin="5" MouseDown="MinimizeWindow"/>
-                <Ellipse Width="10" Height="10" Fill="Green" Margin="5" MouseDown="MaximizeWindow"/>
+                <Ellipse Width="4" Height="4" Fill="Red" Margin="5" MouseDown="CloseWindow"/>
+                <Ellipse Width="4" Height="4" Fill="Yellow" Margin="5" MouseDown="MinimizeWindow"/>
+                <Ellipse Width="4" Height="4" Fill="Green" Margin="5" MouseDown="MaximizeWindow"/>
             </StackPanel>
         </Grid>
+        <!-- Lienzo para anotaciones, justo debajo de la barra de control -->
+        <Canvas Name="AnotacionesCanvas" 
+                Background="White" 
+                Margin="0,20,0,0"
+                MouseDown="Canvas_MouseDown"/>
+
     </Grid>
 </Window>
