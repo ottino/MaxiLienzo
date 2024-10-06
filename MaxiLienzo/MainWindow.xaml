@@ -15,7 +15,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <Ellipse Width="4" Height="4" Fill="Red" Margin="5" MouseDown="CloseWindow"/>
                 <Ellipse Width="4" Height="4" Fill="Yellow" Margin="5" MouseDown="MinimizeWindow"/>
-                <Ellipse Width="4" Height="4" Fill="Green" Margin="5" MouseDown="MaximizeWindow"/>
+                <!--<Ellipse Width="4" Height="4" Fill="Green" Margin="5" MouseDown="MaximizeWindow"/>-->
             </StackPanel>
         </Grid>
         <!-- Lienzo para anotaciones, justo debajo de la barra de control -->
