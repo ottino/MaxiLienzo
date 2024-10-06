@@ -42,5 +42,14 @@ namespace MaxiLienzo
                 this.WindowState = WindowState.Normal; // Restaura el tamaño original
             }
         }
+
+        // Evento para mover la ventana
+        private void MoveWindow(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove(); // Permite mover la ventana
+            }
+        }
     }
 }

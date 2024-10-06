@@ -11,13 +11,12 @@
         Background="White"
         ResizeMode="CanResizeWithGrip">
     <Grid>
-        <Grid Background="LightGray" Height="30" VerticalAlignment="Top">
+        <Grid Background="LightGray" Height="30" VerticalAlignment="Top" MouseDown="MoveWindow">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
                 <Ellipse Width="10" Height="10" Fill="Red" Margin="5" MouseDown="CloseWindow"/>
                 <Ellipse Width="10" Height="10" Fill="Yellow" Margin="5" MouseDown="MinimizeWindow"/>
                 <Ellipse Width="10" Height="10" Fill="Green" Margin="5" MouseDown="MaximizeWindow"/>
             </StackPanel>
         </Grid>
-
     </Grid>
 </Window>
